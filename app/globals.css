@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #020817;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.aviation-panel {
+  @apply rounded-2xl border border-sky-500/20 bg-slate-900/80 backdrop-blur-sm shadow-panel;
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-400;
+}
+
+.secondary-btn {
+  @apply inline-flex items-center justify-center rounded-xl border border-sky-400/50 bg-slate-900/80 px-5 py-3 text-sm font-semibold text-sky-100 transition hover:border-sky-300 hover:bg-slate-800;
+}
+
+.grid-card {
+  @apply rounded-2xl border border-sky-500/20 bg-slate-900/80 p-5;
+}
+
+input,
+textarea,
+select {
+  @apply text-slate-50;
+}
